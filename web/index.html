@@ -18,19 +18,42 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Bamberg Ideen App">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="myapp">
+  <meta name="apple-mobile-web-app-title" content="Bamberg Ideen">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>myapp</title>
+  <title>Bamberg Ideen</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics-compat.js"></script>
+
+  <script>
+    // Firebase Konfiguration
+    const firebaseConfig = {
+      apiKey: "AIzaSyChbKUjaMI3arh5MGMnINRBHefkY2TE3xA",
+      authDomain: "ideabamberg.firebaseapp.com",
+      databaseURL: "https://ideabamberg-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "ideabamberg",
+      storageBucket: "ideabamberg.firebasestorage.app",
+      messagingSenderId: "71948872383",
+      appId: "1:71948872383:web:032f6775c45565c5cff40a",
+      measurementId: "G-0M86XWT7H4"
+    };
+
+    // Firebase initialisieren
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
